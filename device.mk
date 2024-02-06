@@ -45,7 +45,7 @@ PRODUCT_PACKAGES += chre_test_client
 endif
 
 # Enable on-access verification of priv apps. This requires fs-verity support in kernel.
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.apk_verity.mode=2
 
 LOCAL_PATH := device/google/wahoo
